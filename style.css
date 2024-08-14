@@ -1,0 +1,195 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Login Page Styles */
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.login-container h2 {
+    text-align: center;
+    color: #333;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container label {
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.login-container button[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.login-container button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Main Page Styles */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #3498db;
+    color: white;
+}
+
+.header button,
+.pagination-controls button {
+    background-color: #2980b9;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header button:hover,
+.pagination-controls button:hover {
+    background-color: #217dbb;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container select,
+.search-container input[type="text"] {
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.pagination-controls {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    background-color: #f4f4f9;
+
+}
+#prevButton,#nextButton{
+    margin-right:10px;
+    margin-left:10px;
+}
+
+/* Customer Form Page Styles */
+#customerFormPage {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#customerFormPage h2 {
+    text-align: center;
+    color: #333;
+}
+
+#customerForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#customerForm label {
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+#customerForm input[type="text"],
+#customerForm input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#customerForm button[type="submit"],
+#customerForm button[type="button"] {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+#customerForm button[type="submit"]:hover,
+#customerForm button[type="button"]:hover {
+    background-color: #2980b9;
+}
+
+/* Error Message Styles */
+#loginError {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
