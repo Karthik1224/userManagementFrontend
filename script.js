@@ -8,7 +8,7 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
     const password = document.getElementById('password').value;
 
     try {
-        const response = await fetch('https://usermanagementbackend-production-db9a.up.railway.app/api/v1/auth/signin', {
+        const response = await fetch('https://usermanagementbackengit-production-db9a.up.railway.app/api/v1/auth/signin', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
