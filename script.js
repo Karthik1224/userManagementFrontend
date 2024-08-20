@@ -8,7 +8,7 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
     const password = document.getElementById('password').value;
 
     try {
-        const response = await fetch('https://usermanagement-production-701c.up.railway.app/api/v1/auth/signin', {
+        const response = await fetch('https://usermanagementbackend-production-db9a.up.railway.app/api/v1/auth/signin', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -40,7 +40,7 @@ async function fetchAndDisplayCustomers(pageNo) {
     };
 
     try {
-        const response = await fetch('https://usermanagement-production-701c.up.railway.app/api/v1/customer/fetchAll', {
+        const response = await fetch('https://usermanagementbackend-production-db9a.up.railway.app/api/v1/customer/fetchAll', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -103,7 +103,7 @@ function addDeleteButtonListeners() {
 
             if (confirm('Are you sure you want to delete this customer?')) {
                 try {
-                    const deleteResponse = await fetch(`https://usermanagement-production-701c.up.railway.app/api/v1/customer/delete?phone=${encodeURIComponent(phone)}`, {
+                    const deleteResponse = await fetch(`https://usermanagementbackend-production-db9a.up.railway.app/api/v1/customer/delete?phone=${encodeURIComponent(phone)}`, {
                         method: 'DELETE',
                         headers: {
                             'Content-Type': 'application/json',
@@ -165,8 +165,8 @@ document.getElementById('customerForm').addEventListener('submit', async functio
 
     try {
         const url = document.getElementById('formTitle').textContent === 'Add Customer'
-            ? 'https://usermanagement-production-701c.up.railway.app/api/v1/customer/add'
-            : 'https://usermanagement-production-701c.up.railway.app/api/v1/customer/update';
+            ? 'https://usermanagementbackend-production-db9a.up.railway.app/api/v1/customer/add'
+            : 'https://usermanagementbackend-production-db9a.up.railway.app/api/v1/customer/update';
 
         const response = await fetch(url, {
             method: 'POST',
@@ -207,7 +207,7 @@ function loadCustomerDataForEdit(customer) {
 
 document.getElementById('syncButton').addEventListener('click', async function() {
     try {
-        const response = await fetch('https://usermanagement-production-701c.up.railway.app/api/v1/customer/sync', {
+        const response = await fetch('https://usermanagementbackend-production-db9a.up.railway.app/api/v1/customer/sync', {
             method: 'POST',
             headers: {
                 'Authorization': 'Bearer ' + localStorage.getItem('jwtToken')
